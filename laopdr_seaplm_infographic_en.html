@@ -1,0 +1,220 @@
+
+<style>
+  .inf-root { font-family: var(--font-sans); color: var(--color-text-primary); max-width: 680px; }
+  .header-band { background: #185FA5; color: #E6F1FB; border-radius: var(--border-radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+  .header-band h1 { font-size: 18px; font-weight: 500; margin: 0 0 4px; color: #E6F1FB; }
+  .header-band p { font-size: 13px; margin: 0; color: #B5D4F4; }
+  .section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-secondary); margin: 1.25rem 0 0.5rem; }
+  .metrics-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .metric-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; text-align: center; }
+  .metric-num { font-size: 26px; font-weight: 500; line-height: 1.1; }
+  .metric-num.danger { color: #A32D2D; }
+  .metric-num.warn { color: #BA7517; }
+  .metric-num.info { color: #185FA5; }
+  .metric-label { font-size: 11px; color: var(--color-text-secondary); margin-top: 4px; line-height: 1.35; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; }
+  .card h3 { font-size: 13px; font-weight: 500; margin: 0 0 0.75rem; color: var(--color-text-secondary); }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+  .bar-track { flex: 1; height: 14px; background: var(--color-background-secondary); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; }
+  .bar-label { min-width: 32px; text-align: right; font-weight: 500; font-size: 12px; }
+  .bar-name { min-width: 90px; color: var(--color-text-secondary); font-size: 11px; }
+  .alert-box { background: #FAEEDA; border-left: 3px solid #BA7517; padding: 0.7rem 1rem; font-size: 12px; color: #633806; line-height: 1.5; margin-top: 0.5rem; }
+  .full-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 10px; }
+  .compare-row { display: flex; align-items: center; gap: 8px; font-size: 12px; margin-bottom: 6px; }
+  .compare-label { min-width: 110px; color: var(--color-text-secondary); font-size: 11px; }
+  .compare-tracks { flex: 1; }
+  .compare-val { min-width: 30px; text-align: right; font-weight: 500; font-size: 12px; }
+  .equity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .equity-item { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.6rem 0.8rem; }
+  .equity-title { font-size: 12px; font-weight: 500; margin-bottom: 3px; }
+  .equity-desc { font-size: 11px; color: var(--color-text-secondary); line-height: 1.4; }
+  .reco-list { list-style: none; padding: 0; margin: 0; }
+  .reco-list li { font-size: 12px; padding: 6px 0 6px 20px; position: relative; border-bottom: 0.5px solid var(--color-border-tertiary); line-height: 1.4; color: var(--color-text-primary); }
+  .reco-list li:last-child { border-bottom: none; }
+  .reco-list li::before { content: '→'; position: absolute; left: 0; color: #185FA5; font-weight: 500; }
+  .reco-group { margin-bottom: 1rem; }
+  .reco-head { font-size: 12px; font-weight: 500; color: #185FA5; margin-bottom: 4px; }
+</style>
+
+<div class="inf-root">
+  <h2 class="sr-only">Infographic: Lao PDR National Report SEA-PLM 2024 — key results, messages and recommendations</h2>
+
+  <div class="header-band">
+    <h1>Lao PDR — National Report SEA-PLM 2024</h1>
+    <p>Reading & Mathematics learning outcomes — Grade 5 students &nbsp;·&nbsp; 4,167 students &nbsp;·&nbsp; 206 schools &nbsp;·&nbsp; April 2026</p>
+  </div>
+
+  <div class="section-label">Key figures</div>
+  <div class="metrics-row">
+    <div class="metric-card">
+      <div class="metric-num danger">11%</div>
+      <div class="metric-label">meet the SDG minimum level in reading</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-num warn">33%</div>
+      <div class="metric-label">meet the SDG minimum level in mathematics</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-num danger">48%</div>
+      <div class="metric-label">of students at lowest reading band (Band 2 & below)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-num warn">49%</div>
+      <div class="metric-label">of students at lowest maths bands (Bands 2–3)</div>
+    </div>
+  </div>
+
+  <div class="section-label">Achievement by proficiency band — 2024 results</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>Reading — share of students per band</h3>
+      <div class="bar-row"><span class="bar-name">Band 2 & below</span><div class="bar-track"><div class="bar-fill" style="width:48%;background:#E24B4A;"></div></div><span class="bar-label" style="color:#A32D2D;">48%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 3</span><div class="bar-track"><div class="bar-fill" style="width:26%;background:#EF9F27;"></div></div><span class="bar-label" style="color:#BA7517;">26%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 4</span><div class="bar-track"><div class="bar-fill" style="width:16%;background:#97C459;"></div></div><span class="bar-label" style="color:#3B6D11;">16%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 5 (SDG min.)</span><div class="bar-track"><div class="bar-fill" style="width:7%;background:#378ADD;"></div></div><span class="bar-label" style="color:#185FA5;">7%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 6+</span><div class="bar-track"><div class="bar-fill" style="width:4%;background:#185FA5;"></div></div><span class="bar-label" style="color:#185FA5;">4%</span></div>
+      <div class="alert-box">74% of Grade 5 students are operating below the lower primary level. No significant change since 2019.</div>
+    </div>
+    <div class="card">
+      <h3>Mathematics — share of students per band</h3>
+      <div class="bar-row"><span class="bar-name">Band 2 & below</span><div class="bar-track"><div class="bar-fill" style="width:30%;background:#E24B4A;"></div></div><span class="bar-label" style="color:#A32D2D;">30%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 3</span><div class="bar-track"><div class="bar-fill" style="width:19%;background:#EF9F27;"></div></div><span class="bar-label" style="color:#BA7517;">19%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 4</span><div class="bar-track"><div class="bar-fill" style="width:19%;background:#97C459;"></div></div><span class="bar-label" style="color:#3B6D11;">19%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 5 (SDG min.)</span><div class="bar-track"><div class="bar-fill" style="width:15%;background:#378ADD;"></div></div><span class="bar-label" style="color:#185FA5;">15%</span></div>
+      <div class="bar-row"><span class="bar-name">Band 6+</span><div class="bar-track"><div class="bar-fill" style="width:18%;background:#185FA5;"></div></div><span class="bar-label" style="color:#185FA5;">18%</span></div>
+      <div class="alert-box">Slight improvement vs 2019 (57% → 49% in lowest 2 bands). But the weakest students (5th percentile) declined.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Lao PDR vs regional average — % meeting SDG 4.1.1b</div>
+  <div class="full-card">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div style="font-size:12px;font-weight:500;margin-bottom:8px;color:var(--color-text-secondary);">Reading (Band 5+)</div>
+        <div class="compare-row">
+          <span class="compare-label">Lao PDR</span>
+          <div class="compare-tracks"><div style="height:16px;border-radius:3px;background:#E24B4A;width:11%;min-width:20px;"></div></div>
+          <span class="compare-val" style="color:#A32D2D;">11%</span>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">Regional average</span>
+          <div class="compare-tracks"><div style="height:16px;border-radius:3px;background:#378ADD;width:53%;"></div></div>
+          <span class="compare-val" style="color:#185FA5;">53%</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:500;margin-bottom:8px;color:var(--color-text-secondary);">Mathematics (Band 5+)</div>
+        <div class="compare-row">
+          <span class="compare-label">Lao PDR</span>
+          <div class="compare-tracks"><div style="height:16px;border-radius:3px;background:#EF9F27;width:33%;"></div></div>
+          <span class="compare-val" style="color:#BA7517;">33%</span>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">Regional average</span>
+          <div class="compare-tracks"><div style="height:16px;border-radius:3px;background:#378ADD;width:57%;"></div></div>
+          <span class="compare-val" style="color:#185FA5;">57%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Key message — widening inequalities</div>
+  <div class="full-card" style="background:var(--color-background-secondary);">
+    <div style="font-size:13px;line-height:1.7;color:var(--color-text-primary);">
+      The gap between high and low achievers is <strong>widening</strong> — particularly in mathematics. Top performers gained +12 points at the 95th percentile between 2019 and 2024, while the weakest students (5th percentile) <em>declined</em> by 5 points. More resources must be directed to students in the lower half of the distribution.
+    </div>
+    <div style="display:flex;gap:12px;margin-top:10px;">
+      <div style="text-align:center;background:var(--color-background-primary);border-radius:var(--border-radius-md);padding:8px 14px;flex:1;">
+        <div style="font-size:20px;font-weight:500;color:#3B6D11;">+12 pts</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);">Maths 95th percentile<br>(2019→2024)</div>
+      </div>
+      <div style="text-align:center;background:var(--color-background-primary);border-radius:var(--border-radius-md);padding:8px 14px;flex:1;">
+        <div style="font-size:20px;font-weight:500;color:#A32D2D;">−5 pts</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);">Maths 5th percentile<br>(2019→2024)</div>
+      </div>
+      <div style="text-align:center;background:var(--color-background-primary);border-radius:var(--border-radius-md);padding:8px 14px;flex:1;">
+        <div style="font-size:20px;font-weight:500;color:#BA7517;">0 pts</div>
+        <div style="font-size:11px;color:var(--color-text-secondary);">Reading median<br>no change</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Equity factors — observed score gaps</div>
+  <div class="equity-grid">
+    <div class="equity-item">
+      <div class="equity-title" style="color:#185FA5;">Language spoken at home</div>
+      <div class="equity-desc">Lao-speaking students outscore non-Lao speakers by <strong>~14 points</strong> in both domains. An estimated 40% of students in Lao PDR do not speak Lao at home.</div>
+    </div>
+    <div class="equity-item">
+      <div class="equity-title" style="color:#993C1D;">Socioeconomic status</div>
+      <div class="equity-desc">A <strong>~21-point gap</strong> between the highest (Q4) and lowest (Q1) SES quartiles — equivalent to nearly 2 years of learning.</div>
+    </div>
+    <div class="equity-item">
+      <div class="equity-title" style="color:#3B6D11;">School location</div>
+      <div class="equity-desc">Rural students in Lao PDR perform significantly below students in towns and cities in both reading and mathematics.</div>
+    </div>
+    <div class="equity-item">
+      <div class="equity-title" style="color:#534AB7;">Early childhood education (ECE)</div>
+      <div class="equity-desc">ECE attendance is linked to higher achievement. Access rose to 78% in 2024 (from 59% in 2019) but 22% still have no access.</div>
+    </div>
+    <div class="equity-item">
+      <div class="equity-title" style="color:#BA7517;">Daily physical work</div>
+      <div class="equity-desc">Students doing physical labour daily score significantly lower in both reading and mathematics.</div>
+    </div>
+    <div class="equity-item">
+      <div class="equity-title" style="color:#993556;">Gender</div>
+      <div class="equity-desc">Girls slightly outperform boys. 93% of boys do not reach the SDG reading threshold vs 86% of girls.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Recommendations by level of intervention</div>
+  <div class="two-col">
+    <div class="card">
+      <div class="reco-group">
+        <div class="reco-head">Family & early childhood</div>
+        <ul class="reco-list">
+          <li>Expand access to at least 2 years of quality ECE, especially in rural and underserved areas</li>
+          <li>Target the 20% of children with no ECE access to achieve universal enrolment before primary school</li>
+          <li>Empower parents and caregivers in ethnolinguistic communities to support children's learning</li>
+          <li>Provide financial/social protection to reduce reliance on children's labour</li>
+        </ul>
+      </div>
+      <div class="reco-group">
+        <div class="reco-head">Teachers</div>
+        <ul class="reco-list">
+          <li>Expand in-service training in differentiated, inclusive and gender-responsive teaching</li>
+          <li>Provide targeted training on teaching Lao as a second language and multi-grade instruction</li>
+          <li>Train teachers in fostering reading motivation and comprehension strategies</li>
+          <li>Address unmet training needs in digital literacy, critical thinking and global citizenship</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="reco-group">
+        <div class="reco-head">Schools & leadership</div>
+        <ul class="reco-list">
+          <li>Develop structured mentoring and leadership programmes for new principals</li>
+          <li>Invest in classroom libraries, school reading programmes and structured reading time</li>
+          <li>Improve infrastructure where shortages significantly hinder teaching and learning</li>
+          <li>Manage classroom behavioural disruptions more effectively</li>
+        </ul>
+      </div>
+      <div class="reco-group">
+        <div class="reco-head">Provincial & national government</div>
+        <ul class="reco-list">
+          <li>Ensure teaching quality standards align with the national curriculum</li>
+          <li>Address shortages of qualified teachers in high-need areas</li>
+          <li>Review language-of-instruction policy to support non-Lao-speaking students</li>
+          <li>Direct more resources to students in the lower half of the achievement distribution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Overall message</div>
+  <div style="background:#E6F1FB;border-left:3px solid #185FA5;padding:0.9rem 1.2rem;font-size:13px;color:#042C53;line-height:1.7;margin-bottom:1.5rem;">
+    SEA-PLM 2024 results show that learning inequalities remain deep in Lao PDR. Despite modest gains in mathematics, a large majority of Grade 5 students have not yet acquired the foundational skills expected at the end of primary school. The most persistent drivers — language of instruction, socioeconomic background, rural location, and limited ECE access — require targeted, equity-focused policies sustained across all levels of the education system.
+  </div>
+</div>
